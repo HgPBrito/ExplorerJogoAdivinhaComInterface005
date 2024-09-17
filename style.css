@@ -1,0 +1,146 @@
+/* informações globais */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+    --title-font: "Montserrat", sans-serif;
+    --base-text-font: "DM Sans", sans-serif;
+
+    --gradient-background: linear-gradient(225deg, #c2e9fb 0%, #a1c4fd 100%);
+}
+
+body {
+    background: var(--gradient-background);
+    height: 100vh;
+
+    display: grid;
+    place-items: center;    
+}
+
+body, button, input {
+    font-family: var(--base-text-font);
+    font-size: 1.6rem;
+    
+}
+
+main {
+    background: #ffffff;
+    box-shadow: 0rem 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.6rem;
+    padding: 4.8rem 6.4rem 6.4rem;
+
+    width: min(42.8rem, 90%);
+
+    margin-top: -12rem;
+
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+h2 {
+    font-size: 2.4rem;
+    opacity: 0.8;
+    font-weight: 400;
+    margin-bottom: 3.3rem;
+}
+
+h1 {
+    font-family: var(--title-font);
+    font-size: 2.4rem;
+    margin-bottom: 1.6rem;
+}
+
+h1, p {
+    color: #34355B;
+}
+
+p {
+    opacity: 0.8;
+}
+
+form {
+    margin: 4.8rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.screen-initial form  {
+    margin: 2rem 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;
+}
+
+input, button {
+    border: none;
+    padding: 1.6rem;  
+    box-shadow: 0.2rem 0.4rem 0.8rem rgba(0, 0, 0, 0.2);  
+}
+
+input {
+    background-color: #DCE2E9;
+    width: 10.0rem;
+
+    text-align: center;
+    border-radius: 0.4rem 0 0 0.4rem;
+}
+
+#input-initial {
+    border-radius: 0.4rem;
+}
+
+button {
+    background-color: #7879F1;
+    color: #ffffff;
+    font-weight: 700;
+    border-radius: 0 0.4rem 0.4rem 0;
+    cursor: pointer;
+
+    transition: background 0.3s;
+}
+
+#button-initial {
+    border-radius: 0.4rem;
+    width: 10.0rem;
+}
+
+#button-final, #attempts-score-button  {
+    border-radius: 0.4rem;
+}
+
+#attempts-score-button  {
+    font-size: 1.2rem;
+    padding: 0.6rem;
+    border-radius: 0.4rem;
+}
+
+button:hover {
+    background-color: #4242bd;
+}
+
+#hint {
+    font-size: 1.2rem;
+    opacity: 0.2;
+}
+
+.screen-game > form:first-child  {
+    margin: 0  1rem 4.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+} 

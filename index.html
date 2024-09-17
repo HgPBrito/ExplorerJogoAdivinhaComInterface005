@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jogo de Adivinhação</title>
+
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <div class="screen-initial">
+
+                <h1>Jogo da Adivinhação</h1>
+                <p>Você acha que adivinha em quantas tentativas? </p>
+                
+                <form>
+                    <input id="input-initial" type="number">                        
+                    <button id="button-initial">Bora!</button>
+                </form>
+            </div>
+
+            <div class="screen-game hide">   
+                <form>
+                    <p id="attempts-score">XX/XX</p>
+                    <button id="attempts-score-button" class="hide">Desistir...</button>
+                </form>
+                
+                <p>Adivinhe o número que estou pensando... </p>
+                
+                <form>
+                    <input id="input-number" type="number">
+                    <button id="button-try">Tentar</button>
+                </form>
+                <p id="hint" class="hide">(dica: Está entre 0 e 10.)</p>
+                
+            </div>
+
+            <div class="screen-final hide">
+                <h2>Acertou em X tentativas!</h2>
+                <form>
+                    <button id="button-final">Tentar novamente?</button>
+                </form>
+            </div>
+
+            
+        </main>
+        <script src="./script.js"></script>
+    </body>
+</html>
